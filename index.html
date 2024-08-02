@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BookStore</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="app">
+      <div class="title">Love to Read</div>
+      <div class="book" @wheel.prevent="wheel($event)">
+        <div class="cards">
+          <div class="card" v-for="book in books">
+            <div class="left">
+              <!--<img :src="book.cover" style="width:200px"/>-->
+              <div class="cover" :style="bgcss(book.cover)"></div>
+            </div>
+            <!-- end left-->
+            <div class="right">
+              <h2>{{book.name}}</h2>
+              <h4>{{book.type}}</h4>
+              <p v-html="book.description"></p>
+              <div class="price">$ {{book.price}}</div>
+              <button class="add" @click="addCart(book, $event)">
+                + Add to Cart
+              </button>
+            </div>
+            <!-- end right-->
+          </div>
+          <!-- end card-->
+        </div>
+      </div>
+      <!-- end book-->
+
+      <div
+        class="buybox"
+        :style="bgcss(currentBook.cover)"
+        v-if="currentBook"
+      ></div>
+      <!-- end buybox-->
+
+      <div class="control" v-if="isCartOpen">
+        <div class="panel">
+          <h2>Book Cart List</h2>
+          <ul>
+            <li v-for="(book,bid) in cart">
+              <div class="thumbnail" :style="bgcss(book.cover)"></div>
+              <h3>{{book.name}}</h3>
+              <h3>單價:{{book.price}}</h3>
+              <div class="item_control_button">
+                <button class="decreaseItem" @click="decreaseItem(book, $event)">
+                  -
+                </button>
+                <div class="count">{{book.count}}</div>
+                <button class="increaseItem" @click="increaseItem(book, $event)">
+                  +
+                </button>
+                <div class="cart_books_price">
+                  <h3>$</h3>
+                  <div>{{book.price*book.count}}</div>
+                </div>
+                <button class="deleteItem" @click="deleteItem(book, $event)">
+                  刪除
+                </button>
+                
+              </div>
+              
+            </li>
+            <li v-if="!cart.length"><h3>Empty Cart</h3></li>
+          </ul>
+          <hr />
+          <h2>total price:{{totalPrice}}</h2>
+          <button class="delete" @click="deleteWholeCart">clear cart</button>
+        </div>
+      </div>
+      <!-- end control-->
+
+      <div class="fixed-control" @click="cartController">
+        <i class="fa fa-shopping-cart"></i>
+        <span>{{cart.length}}</span>
+      </div>
+      <!-- end fixed-control-->
+
+      <div class="management-control" @click="managementController">後台</div>
+      <!-- start 後台 -->
+      <div class="control" v-if="isManagementOpen ">
+        <div class="panel">
+          <h2>庫存</h2>
+          <ul>
+            <li v-for="(book,bid) in books">
+              <div class="thumbnail" :style="bgcss(book.cover)"></div>
+              <h3> {{book.name}} </h3>
+              <div class="item_control_button">
+                <button class="decreaseStock" @click="decreaseTenStock(book, $event)" >
+                  -10
+                 </button>
+                <button class="decreaseStock" @click="decreaseStock(book, $event)" >
+                -
+                </button>
+                <div class="count">{{book.stock}}</div>
+                <button class="increaseStock" @click="increaseStock(book, $event)">
+                  +
+                </button>
+                <button class="increaseStock" @click="increaseTenStock(book, $event)">
+                  +10
+                </button>
+              </div>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <!-- end 後台 -->
+    </div>
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>

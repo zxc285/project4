@@ -1,0 +1,65 @@
+[
+    {
+      "name": "小王子 Le Petit Prince",
+      "type": "翻譯小說,青少年文學,傳記小說",
+      "cover": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/014/71/F010147165.jpg",
+      "description": "A pilot crashes in the Sahara Desert and encounters a strange young boy who calls himself the Little Prince. The Little Prince has traveled there from his home on a lonely, distant asteroid with a single rose. The story that follows is a beautiful and at times heartbreaking meditation on human nature.",
+      "price": 349,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "波西傑克森 6:天神聖杯",
+      "type": "翻譯小說,青少年文學,奇幻小說",
+      "cover": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/a12/65/F01a126506.jpg",
+      "description": "半神半人的波西．傑克森，經歷了拯救多重世界的驚險事件後，如今十七歲的他，只求安穩度過高三這一年，順利拿到高中畢業證書，並取得大學入學資格。但波西是個問題學生，患有注意力不足過動症與閱讀障礙，求學對他而言，並沒有比戰鬥來得容易……",
+      "price": 299,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "每天破一起謀殺案(1)",
+      "type": "生活,遊戲",
+      "cover": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/919/30/F019193049.jpg",
+      "description": "書中共有100件神秘懸案等你破解, 這是你樂不思「3C」的更強娛樂,讓觀察力,推理與歸納能力大增! 解題過程中,你會發現自己不知道從哪一題開始,已經形成一種「直指關鍵處」的犀利思考路徑,破題的推理與歸納過程,你感到暢快淋漓.",
+      "price": 499,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "Harry Potter",
+      "type": "翻譯小說,青少年文學,奇幻小說",
+      "cover": "https://i.pinimg.com/originals/61/2b/bf/612bbfe53a59beb87e6dd2e8047d2866.jpg",
+      "description": "Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.",
+      "price": 250,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "Harry Potter and the Chamber of Secrets",
+      "type": "翻譯小說,青少年文學,奇幻小說",
+      "cover": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/918/12/F019181205.jpg",
+      "description": "The Dursleys were so mean and hideous that summer that all Harry Potter wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he's packing his bags, Harry receives a warning from a strange, impish creature named Dobby who says that if Harry Potter returns to Hogwarts, disaster will strike.",
+      "price": 250,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "Harry Potter and the Prisoner of Azkaban",
+      "type": "翻譯小說,青少年文學,奇幻小說",
+      "cover": "https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/918/12/F019181206.jpg",
+      "description": "The third book in the Harry Potter series, illustrated in brilliant colour by the iconic design house MinaLima and featuring interactive paper-engineered elements, including the Marauder's Map",
+      "price": 200,
+      "open": false,
+      "stock" : 100
+    },
+    {
+      "name": "Harry Potter and the Goblet of Fire",
+      "type": "翻譯小說,青少年文學,奇幻小說",
+      "cover": "https://im2.book.com.tw/image/getImage?i=https://www.books.com.tw/img/F01/918/12/F019181207.jpg",
+      "description": "Harry Potter wants to get away from the pernicious Dursleys and go to the Quidditch World Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his crush (and maybe do more than dream). He wants to find out about the mysterious event involving two other rival schools of magic, and a competition that has not happened for hundreds of years.",
+      "price": 300,
+      "open": false,
+      "stock" : 100
+    }
+  ]
